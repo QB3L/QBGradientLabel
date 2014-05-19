@@ -1,9 +1,9 @@
 //
-//  QBGradientView.m
-//  MobileMafia
+//  QBGradientLabel.m
+//  TopBalance Software
 //
 //  Created by Ruben Nieves on 10/2/10.
-//  Copyright 2010 Mobile Mafia. All rights reserved.
+//  Copyright 2010 TopBalance Software. All rights reserved.
 //
 
 #import "QBGradientLabel.h"
