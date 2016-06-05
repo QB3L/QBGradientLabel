@@ -22,6 +22,7 @@
 		4540E59F192A691C006F1DF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4540E59D192A691C006F1DF3 /* InfoPlist.strings */; };
 		4540E5A1192A691C006F1DF3 /* QBGradientLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4540E5A0192A691C006F1DF3 /* QBGradientLabelTests.m */; };
 		4540E5B0192A6989006F1DF3 /* QBGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4540E5AF192A6989006F1DF3 /* QBGradientLabel.m */; };
+		4F82BBC51D03D6F900E32EEC /* QBGradientLabelSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82BBC41D03D6F900E32EEC /* QBGradientLabelSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		4540E5A0192A691C006F1DF3 /* QBGradientLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBGradientLabelTests.m; sourceTree = "<group>"; };
 		4540E5AE192A6989006F1DF3 /* QBGradientLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBGradientLabel.h; sourceTree = "<group>"; };
 		4540E5AF192A6989006F1DF3 /* QBGradientLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBGradientLabel.m; sourceTree = "<group>"; };
+		4F82BBC31D03D6F900E32EEC /* QBGradientLabel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QBGradientLabel-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F82BBC41D03D6F900E32EEC /* QBGradientLabelSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QBGradientLabelSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 			children = (
 				4540E5AE192A6989006F1DF3 /* QBGradientLabel.h */,
 				4540E5AF192A6989006F1DF3 /* QBGradientLabel.m */,
+				4F82BBC41D03D6F900E32EEC /* QBGradientLabelSwift.swift */,
+				4F82BBC31D03D6F900E32EEC /* QBGradientLabel-Bridging-Header.h */,
 			);
 			path = GradientLabel;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 		4540E56A192A691C006F1DF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "TopBalance Software";
 				TargetAttributes = {
@@ -262,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F82BBC51D03D6F900E32EEC /* QBGradientLabelSwift.swift in Sources */,
 				4540E58C192A691C006F1DF3 /* ViewController.m in Sources */,
 				4540E5B0192A6989006F1DF3 /* QBGradientLabel.m in Sources */,
 				4540E586192A691C006F1DF3 /* AppDelegate.m in Sources */,
@@ -390,10 +397,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QBGradientLabel/QBGradientLabel-Prefix.pch";
 				INFOPLIST_FILE = "QBGradientLabel/QBGradientLabel-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QBGradientLabel/GradientLabel/QBGradientLabel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,10 +414,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QBGradientLabel/QBGradientLabel-Prefix.pch";
 				INFOPLIST_FILE = "QBGradientLabel/QBGradientLabel-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QBGradientLabel/GradientLabel/QBGradientLabel-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +484,7 @@
 				4540E5A6192A691C006F1DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4540E5A7192A691C006F1DF3 /* Build configuration list for PBXNativeTarget "QBGradientLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +493,7 @@
 				4540E5A9192A691C006F1DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
