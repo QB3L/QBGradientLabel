@@ -1,7 +1,7 @@
 QBGradientLabel
 ===============
 
-Simple label that draws a gradient as the background. Offers multiple ways to initialize or change color.
+Simple label that draws a gradient as the background. Offers multiple ways to initialize or change color. Written in Both ObjC and Swift
 
 
 Getting Started
